@@ -53,17 +53,17 @@ const updateSearch= event=>{
     <div className="App">
       <StyledNav>
         
-        <img src={process.env.PUBLIC_URL + '/logo-amiibo-glow.png'}></img>
+        <img alt="logoimg" src={process.env.PUBLIC_URL + '/logo-amiibo-glow.png'}></img>
   <form className="search-form">
       <input className="search-bar" type="text" value={search} onChange={updateSearch}/>
       <button  className="search-button" type="submit">reset</button>
      </form>
 
         <AtagDiv>
-        <a>what is amiibo?</a>
-        <a>Lineup</a>
-        <a>FAQ</a>
-        <a>Buy now</a>
+        <a href="google.com">what is amiibo?</a>
+        <a href="google.com">Lineup</a>
+        <a href="google.com">FAQ</a>
+        <a href="google.com">Buy now</a>
         </AtagDiv>
       </StyledNav>
 
