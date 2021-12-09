@@ -17,7 +17,7 @@ const App =()=> {
     const data = await response.json();
     
     console.log(data)
-
+    console.log('save')
 
     setAmiibos(data.amiibo.slice(0,50));
 
