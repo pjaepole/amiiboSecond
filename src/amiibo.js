@@ -38,6 +38,7 @@ import styled from 'styled-components';
             <div>
                 <h1>{character}</h1>
                 <p>from {game}</p>
+                <p>Checking new change is made on component</p>
             </div>
 
         </StyledAmiibo>
