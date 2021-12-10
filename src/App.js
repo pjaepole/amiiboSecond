@@ -19,7 +19,7 @@ const App =()=> {
     console.log(data)
     console.log('save')
 
-    setAmiibos(data.amiibo.slice(0,50));
+    setAmiibos(data.amiibo.slice(0,100));
 
   }
   const figures=amiibos.filter(function(amiibo){
