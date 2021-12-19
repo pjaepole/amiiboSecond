@@ -27,11 +27,11 @@ const App =()=> {
   });
 
 
-const updateSearch= event=>{
-  setSearch(
+const updateSearch=(event)=>{
+  setSearch({
     ...search,
-    event.target.value
-    )
+    [event.target.name]:event.target.value
+  })
 }
   const StyledApp=styled.div`
   display:flex;
@@ -58,7 +58,7 @@ const updateSearch= event=>{
         
         <img alt="logoimg" src={process.env.PUBLIC_URL + '/logo-amiibo-glow.png'}></img>
   <form className="search-form">
-      <input className="search-bar" type="text" value={search} onChange={updateSearch}/>
+      <input className="search-bar" type="text" name='search' value={search} onChange={updateSearch}/>
       <button  className="search-button" type="submit">reset</button>
      </form>
 
