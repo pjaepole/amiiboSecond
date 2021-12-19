@@ -28,10 +28,10 @@ const App =()=> {
 
 
 const updateSearch=(event)=>{
-  setSearch({
+  setSearch(
     ...search,
     [event.target.name]:event.target.value
-  })
+  )
 }
   const StyledApp=styled.div`
   display:flex;
