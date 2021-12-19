@@ -26,13 +26,10 @@ const App =()=> {
     return amiibo.type==="Figure";
   });
 
-
-const updateSearch=(event)=>{
-  setSearch(
-    ...search,
-    [event.target.name]:event.target.value
-  )
+const updateSearch= event=>{
+  setSearch(event.target.value)
 }
+
   const StyledApp=styled.div`
   display:flex;
   flex-wrap:wrap;
